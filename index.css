@@ -1,0 +1,59 @@
+body {
+    margin: 1em;
+    background-color: #efefef;
+}
+
+p {
+    margin-bottom: 0rem;
+    line-height: 1.8em;
+}
+
+.sidebar,
+.mainbar {
+    padding: 1em;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-bottom: 0.75em;
+    border-radius: 1em;
+    top: -1px;
+}
+
+.sidebar img {
+    margin-top: -8rem;
+    margin-bottom: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.progress-title {
+    float: left;
+    line-height: 16px;
+    margin-right: 1em;
+}
+
+.progress-height {
+    height: 24px;
+}
+
+.sidebar-stuck img {
+    transition: margin 700ms;
+    margin-top: 0em;
+}
+
+.sidebar-unstuck img {
+    transition: margin 700ms;
+    margin-top: -8rem;
+}
+
+.top-space {
+    padding-top: 7rem !important;
+}
+
+@media only screen and (max-width: 48em) {
+    .sidebar-stuck, .sidebar-unstuck img {
+        margin-top: 0em;
+    }
+    .top-space {
+        padding-top: 0rem !important;
+    }
+}
+
