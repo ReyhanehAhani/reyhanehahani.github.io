@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Reyhaneh Ahani — ML, multimodal AI, data engineering. M.CompEng @ SFU." />
+  <title>Reyhaneh Ahani</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <nav class="site-nav" aria-label="Primary">
+    <div class="inner">
+      <a class="brand" href="#">Reyhaneh Ahani</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#updates">Lab notes</a>
+        <a href="#education">Education</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-photo-wrap">
+        <!-- Swap src to your photo, e.g. static/profile.jpg -->
+        <img
+          class="hero-photo is-placeholder"
+          src="static/photo-placeholder.svg"
+          alt="Reyhaneh Ahani"
+          width="220"
+          height="264"
+        />
+      </div>
+      <div>
+        <h1>Reyhaneh Ahani</h1>
+        <p class="tagline">Data analyst &amp; graduate researcher · ML, multimodal AI, and data systems</p>
+        <p class="lead">
+          I work at the intersection of <strong>applied machine learning</strong>, <strong>spatial and tabular data</strong>,
+          and <strong>systems you can actually ship</strong>—from research on language-guided depth estimation to
+          government-facing analytics and RAG over large legal corpora.
+        </p>
+        <div class="social-row">
+          <a href="mailto:raa112@sfu.ca">Email</a>
+          <a href="https://github.com/ReyhanehAhani" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/reyhaneh-ahani-a38ba91b9/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <span>Toronto, ON · open to relocation</span>
+        </div>
+        <div class="pills" aria-label="Focus areas">
+          <span class="pill">PyTorch &amp; JAX</span>
+          <span class="pill">LLMs &amp; RAG</span>
+          <span class="pill">MLOps &amp; AWS</span>
+          <span class="pill">Spatial / GIS</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="wrap">
+      <h2 class="section-title">About</h2>
+      <p>
+        I’m a Master’s student in Computer Engineering at <strong>Simon Fraser University</strong>, also working as a
+        <strong>Big Data Analyst</strong> at the SFU Big Data Hub on public-sector projects. I like problems where the
+        hard part isn’t only the model—it’s joining messy sources, validating carefully, and explaining results to people
+        who need to act on them.
+      </p>
+      <p>
+        Outside of work I swim regularly, fold origami, and hike when the weather cooperates. I enjoy languages:
+        <strong>Farsi</strong>, <strong>Turkish</strong>, <strong>Azerbaijani</strong>, and <strong>English</strong> are
+        comfortable for me; I’m still polishing <strong>French</strong>.
+      </p>
+      <div class="about-grid">
+        <div class="about-card">
+          <h3>How I work</h3>
+          <p>Reproducible pipelines, explicit assumptions, and ablations when the question is “what actually helped?”</p>
+        </div>
+        <div class="about-card">
+          <h3>What I’m drawn to</h3>
+          <p>Multimodal models, retrieval-heavy LLM apps, depth &amp; 3D, and analytics that touch real policy or operations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="wrap">
+      <h2 class="section-title">Experience</h2>
+
+      <article class="job">
+        <div class="job-header">
+          <span class="job-title">Big Data Analyst</span>
+          <span class="job-org">· SFU Big Data Hub</span>
+          <span class="job-meta">Feb 2025 – Present · Vancouver, Canada</span>
+        </div>
+        <ul>
+          <li>ETL and lake-scale integration (mobility, weather, GIS) for a government fisheries program; hourly-aligned features for modeling.</li>
+          <li>GLMMs and spatial features with rigorous holdout-by-lake validation; model serving and BI-style reporting for decision-makers.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <div class="job-header">
+          <span class="job-title">Graduate Research Assistant</span>
+          <span class="job-org">· Simon Fraser University</span>
+          <span class="job-meta">Jan 2025 – Present · Vancouver, Canada</span>
+        </div>
+        <ul>
+          <li>LangDepth: language-guided monocular depth with CLIP + SAM-style encoders, FiLM conditioning, and systematic multimodal ablations.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <div class="job-header">
+          <span class="job-title">Graduate Applied Researcher</span>
+          <span class="job-org">· Simon Fraser University</span>
+          <span class="job-meta">Dec 2025 – Present · Vancouver, Canada</span>
+        </div>
+        <ul>
+          <li>Modular legal RAG: LangGraph orchestration, schema validation, retrieval tuned for long-form legal text, and grounding checks.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <div class="job-header">
+          <span class="job-title">Machine Learning Engineer</span>
+          <span class="job-org">· Metra Consultant Company</span>
+          <span class="job-meta">Jan 2024 – Dec 2024 · Tehran, Iran</span>
+        </div>
+        <ul>
+          <li>Deployed ML as FastAPI services for logistics; route and cost prediction from spatiotemporal data.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <div class="job-header">
+          <span class="job-title">Data Scientist Intern</span>
+          <span class="job-org">· Human Gene</span>
+          <span class="job-meta">Jun 2022 – Sep 2022 · Tehran, Iran</span>
+        </div>
+        <ul>
+          <li>NGS pipelines and papermill-driven workflows; frequency and visualization tooling on large sequencing datasets.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="wrap">
+      <h2 class="section-title">Selected projects</h2>
+      <p style="margin-top:-0.5rem; color: var(--muted); max-width: 65ch;">
+        A short list of repos that best represent research depth, production-style apps, and data-heavy work.
+        See <a href="https://github.com/ReyhanehAhani?tab=repositories" target="_blank" rel="noopener noreferrer">all repositories on GitHub</a>.
+      </p>
+      <div class="project-grid" style="margin-top: 1.25rem;">
+        <article class="project-card">
+          <h3>LangDepth</h3>
+          <p>Language-conditioned monocular depth: multimodal fusion, ablations across indoor benchmarks, and strong zero-shot transfer.</p>
+          <div class="links"><a href="https://github.com/ReyhanehAhani/LangDepth" target="_blank" rel="noopener noreferrer">GitHub →</a></div>
+        </article>
+        <article class="project-card">
+          <h3>Llama3 RAG Chatbot</h3>
+          <p>Agentic RAG with LangGraph + LangChain: hybrid BM25/FAISS retrieval, relevance gating, and fallbacks for grounded answers.</p>
+          <div class="links"><a href="https://github.com/ReyhanehAhani/Llama3_RAG_Chatbot" target="_blank" rel="noopener noreferrer">GitHub →</a></div>
+        </article>
+        <article class="project-card">
+          <h3>LegalRAG</h3>
+          <p>RAG stack oriented to Canadian case law—retrieval and chat over structured legal text (fork extended for coursework / research).</p>
+          <div class="links"><a href="https://github.com/ReyhanehAhani/LegalRAG" target="_blank" rel="noopener noreferrer">GitHub →</a></div>
+        </article>
+        <article class="project-card">
+          <h3>VisionShopper</h3>
+          <p>Multimodal shopping assistant: Next.js + Gemini Flash, image compression, and async persistence for low-latency UX.</p>
+          <div class="links">
+            <a href="https://github.com/ReyhanehAhani/VisionShopper" target="_blank" rel="noopener noreferrer">GitHub →</a>
+            · <a href="https://vision-shopper.vercel.app" target="_blank" rel="noopener noreferrer">Live demo</a>
+          </div>
+        </article>
+        <article class="project-card">
+          <h3>AdaDepthCLIP</h3>
+          <p>Depth from CLIP (ViT-B/32) with adapter-style fine-tuning and a composite loss for sharper indoor geometry.</p>
+          <div class="links"><a href="https://github.com/ReyhanehAhani/AdaDepthCLIP" target="_blank" rel="noopener noreferrer">GitHub →</a></div>
+        </article>
+        <article class="project-card">
+          <h3>NGS Data Analyser</h3>
+          <p>Genomics training work: NGS workflows, frequency tools, and plots to support variant and disease-association analysis.</p>
+          <div class="links"><a href="https://github.com/ReyhanehAhani/NGS_Data_Analyser" target="_blank" rel="noopener noreferrer">GitHub →</a></div>
+        </article>
+        <article class="project-card">
+          <h3>FAIRSEQ EN–FA Translation</h3>
+          <p>Neural MT with FAIRSEQ: preprocessing, LSTM and Transformer baselines, and COMET evaluation for English–Persian.</p>
+          <div class="links"><a href="https://github.com/ReyhanehAhani/FAIRSEQ-EN-FA-translation" target="_blank" rel="noopener noreferrer">GitHub →</a></div>
+        </article>
+        <article class="project-card">
+          <h3>MultiNLI · Llama3 &amp; RoBERTa</h3>
+          <p>Efficient fine-tuning experiments (incl. LoRA) comparing Llama 3 and RoBERTa on MultiNLI-style natural language inference.</p>
+          <div class="links"><a href="https://github.com/ReyhanehAhani/MultiNLI-LLama-Roberta" target="_blank" rel="noopener noreferrer">GitHub →</a></div>
+        </article>
+        <article class="project-card">
+          <h3>Diabet · LIME &amp; SHAP</h3>
+          <p>Interpretable ML for diabetes risk: model-agnostic explanations and comparison of explanation methods on tabular data.</p>
+          <div class="links"><a href="https://github.com/ReyhanehAhani/Diabet-LIME-SHAP" target="_blank" rel="noopener noreferrer">GitHub →</a></div>
+        </article>
+        <article class="project-card">
+          <h3>Bachelor’s thesis</h3>
+          <p>Undergraduate capstone work (notebooks, models, and write-up) from Amirkabir—documents my early research-grade pipeline in vision / autonomous-driving themes.</p>
+          <div class="links"><a href="https://github.com/ReyhanehAhani/Bachelor-Thesis" target="_blank" rel="noopener noreferrer">GitHub →</a></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="updates">
+    <div class="wrap">
+      <h2 class="section-title">Lab notes</h2>
+      <p style="margin-top:-0.5rem; color: var(--muted); max-width: 65ch;">
+        Informal updates—what I’m building, reading, or thinking about. Edit the blocks below in <code>index.html</code> whenever you want to post something new.
+      </p>
+      <div class="updates-list" style="margin-top: 1.25rem;">
+        <article class="update-item">
+          <div class="update-meta">
+            <span class="update-date">April 2026</span>
+            <span class="update-tag">Building</span>
+          </div>
+          <p>Pushing LangDepth experiments and paper prep; tightening ablations on language-vs.-vision contributions to depth quality.</p>
+        </article>
+        <article class="update-item">
+          <div class="update-meta">
+            <span class="update-date">April 2026</span>
+            <span class="update-tag">Reading</span>
+          </div>
+          <p>Re-reading foundational papers on FiLM / feature-wise modulation and recent CLIP-style adapters—mapping what transfers best to depth heads.</p>
+        </article>
+        <article class="update-item">
+          <div class="update-meta">
+            <span class="update-date">March 2026</span>
+            <span class="update-tag">Shipping</span>
+          </div>
+          <p>Legal RAG: chunking for citations, stricter JSON outputs with Pydantic, and evals that penalize unsupported claims.</p>
+        </article>
+      </div>
+      <p class="updates-hint">
+        Tip: duplicate an <code>&lt;article class="update-item"&gt;</code> block and change the date, tag, and paragraph—no build step required.
+      </p>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="wrap">
+      <h2 class="section-title">Education</h2>
+      <div class="edu-row">
+        <div class="edu-card">
+          <div class="when">Jan 2025 – Jun 2026</div>
+          <strong>M.Sc., Computer Engineering</strong>
+          <span>Simon Fraser University · GPA 4.08 / 4.30</span>
+        </div>
+        <div class="edu-card">
+          <div class="when">Sep 2019 – Sep 2023</div>
+          <strong>B.Sc., Electrical Engineering</strong>
+          <span>Minor: Computer Engineering · Amirkabir University of Technology · GPA 3.94 / 4.00</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      © <span id="y"></span> Reyhaneh Ahani ·
+      <a href="https://github.com/ReyhanehAhani/reyhanehahani.github.io" target="_blank" rel="noopener noreferrer">Site source</a>
+    </div>
+  </footer>
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

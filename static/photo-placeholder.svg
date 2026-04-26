@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="480" viewBox="0 0 400 480" fill="none">
+  <rect width="400" height="480" fill="#1e3d3a" rx="8"/>
+  <circle cx="200" cy="175" r="72" fill="#2d5a56"/>
+  <ellipse cx="200" cy="360" rx="110" ry="130" fill="#2d5a56"/>
+  <text x="200" y="455" text-anchor="middle" fill="#a8c5c2" font-family="system-ui,sans-serif" font-size="14">Replace with static/profile.jpg</text>
+</svg>
