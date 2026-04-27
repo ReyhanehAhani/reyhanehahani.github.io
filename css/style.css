@@ -543,12 +543,6 @@ main {
   color: var(--muted);
 }
 
-.updates-hint {
-  font-size: 14px;
-  color: var(--muted);
-  margin-top: 14px;
-}
-
 /* Education */
 .edu-grid {
   display: grid;
