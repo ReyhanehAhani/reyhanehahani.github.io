@@ -74,12 +74,12 @@
           I’m also pursuing a Master’s in <strong>Computer Engineering</strong> at SFU.
         </p>
         <p>
-          Technically, I’m comfortable from <strong>feature stores and ETL</strong> (e.g. Spark, lake-style storage, alignment of irregular time series)
+          Technically, I <strong>build and operate</strong> across the stack—from <strong>feature stores and ETL</strong> (e.g. Spark, lake-style storage, alignment of irregular time series)
           through <strong>classical and hierarchical models</strong> (e.g. GLMMs, spatial covariates, leave-one-unit-out validation) to
           <strong>modern deep learning</strong> (PyTorch/JAX, ViT/CLIP-style encoders, FiLM and adapter-style conditioning) and
           <strong>LLM application engineering</strong> (LangGraph, chunking for citations, schema-constrained outputs, evals that stress grounding).
-          I tend to keep assumptions explicit, prefer <strong>reproducible notebooks and tracked experiments</strong>, and use ablations when the question
-          is genuinely “what moved the metric?”
+          In practice I document data and model assumptions for stakeholders, keep <strong>versioned, script-driven pipelines and experiment tracking</strong> so runs are auditable,
+          and use <strong>focused ablations as part of pre-deployment review</strong> when the question is what actually moved the metric in production.
         </p>
         <p>
           I’m especially interested in <strong>retrieval-heavy LLM systems</strong> (legal and enterprise text, multi-hop QA, tool-augmented agents),
@@ -88,8 +88,9 @@
           <strong>policy or operations</strong>—models are most satisfying when someone can act on the output.
         </p>
         <p>
-          Outside the desk, I swim regularly, enjoy origami and hiking, and I like picking up languages:
-          <strong>Farsi</strong>, <strong>Turkish</strong>, <strong>Azerbaijani</strong>, and <strong>English</strong> are comfortable; I’m still improving <strong>French</strong>.
+          Outside the desk, I swim regularly, enjoy origami and hiking. I’m also very interested in languages and tend to learn new ones quickly.
+          I like picking up languages: <strong>English</strong> is my primary working language; I’m fluent in <strong>Farsi</strong>, <strong>Turkish</strong>, and <strong>Azerbaijani</strong>;
+          I’m still improving <strong>French</strong>.
         </p>
         <div class="section-bar" aria-hidden="true"></div>
       </section>
@@ -109,7 +110,7 @@
               </div>
               <h3>Big Data Analyst · SFU Big Data Hub</h3>
               <ul>
-                <li>ETL and integration at lake scale (mobility, weather, GIS) for a government fisheries program; hourly-aligned features for downstream models.</li>
+                <li>Built <strong>automated ingestion</strong> (scheduled jobs and Python scripts) that pull mobility signals from the <strong>Telus API</strong>, combine them with weather and GIS layers at lake scale for a government fisheries program, and land on an <strong>hourly analysis grid</strong> for downstream modeling.</li>
                 <li>GLMMs and spatial features with rigorous holdout-by-lake validation; model deployment and BI-style summaries for program staff.</li>
               </ul>
             </div>
@@ -244,7 +245,7 @@
                 <h3>AdaDepthCLIP</h3>
                 <span class="year">Vision</span>
               </div>
-              <p>Monocular depth with CLIP ViT-B/32 and adapter-style fine-tuning; composite loss.</p>
+              <p>Trains a monocular depth head on top of frozen CLIP ViT-B/32, using <strong>lightweight adapter blocks</strong> instead of full fine-tunes so the vision-language backbone stays stable while the depth decoder adapts. A <strong>composite loss</strong> blends scale-invariant and gradient terms so indoor layouts stay sharp without blowing up on thin structures.</p>
               <div class="tags">
                 <span>CLIP</span><span>ViT</span><span>Adapters</span>
               </div>
@@ -268,7 +269,7 @@
                 <h3>FAIRSEQ EN–FA</h3>
                 <span class="year">NLP</span>
               </div>
-              <p>Neural MT pipeline: preprocessing, LSTM and Transformer models, COMET evaluation.</p>
+              <p>End-to-end <strong>English–Persian</strong> neural MT in FAIRSEQ: normalized and filtered parallel data, trained both <strong>LSTM seq2seq</strong> and <strong>Transformer</strong> baselines, and scored outputs with <strong>COMET</strong> (plus classic automatic metrics) to compare architecture choices under the same preprocessing budget.</p>
               <div class="tags">
                 <span>FAIRSEQ</span><span>MT</span><span>Transformers</span>
               </div>
@@ -280,7 +281,7 @@
                 <h3>MultiNLI · Llama3 &amp; RoBERTa</h3>
                 <span class="year">Fine-tuning</span>
               </div>
-              <p>LoRA-style efficient tuning experiments comparing Llama 3 and RoBERTa on NLI.</p>
+              <p>Systematic <strong>parameter-efficient fine-tuning</strong> on MultiNLI-style natural language inference: <strong>LoRA</strong> on Llama&nbsp;3 versus a strong <strong>RoBERTa</strong> encoder baseline, with matched training budgets and error analysis to see when instruction-tuned LLMs buy you gains on structured entailment.</p>
               <div class="tags">
                 <span>LoRA</span><span>Hugging Face</span><span>NLI</span>
               </div>
@@ -292,9 +293,9 @@
                 <h3>Diabet · LIME &amp; SHAP</h3>
                 <span class="year">XAI</span>
               </div>
-              <p>Interpretable ML on tabular clinical-style data; compare explanation methods.</p>
+              <p>Part of my exploration of <strong>trustworthy AI</strong>: train classifiers on tabular, clinical-style diabetes-risk data, then stress-test <strong>explainability (XAI)</strong> with <strong>LIME</strong> and <strong>SHAP</strong>—comparing local vs. global attributions and when each method aligns (or conflicts) with model behavior for safe downstream use.</p>
               <div class="tags">
-                <span>SHAP</span><span>LIME</span><span>Sklearn</span>
+                <span>Trustworthy AI</span><span>XAI</span><span>SHAP</span><span>LIME</span><span>Sklearn</span>
               </div>
               <div class="card-links"><a href="https://github.com/ReyhanehAhani/Diabet-LIME-SHAP" target="_blank" rel="noopener noreferrer">GitHub →</a></div>
             </article>
@@ -304,9 +305,9 @@
                 <h3>Bachelor’s thesis</h3>
                 <span class="year">Capstone</span>
               </div>
-              <p>Undergraduate research artifacts from Amirkabir — vision and autonomous-driving themes.</p>
+              <p>Bachelor’s capstone at <strong>Amirkabir University of Technology</strong>: full thesis package (code, experiments, and report) on <strong>computer vision for intelligent vehicles</strong>—detection/segmentation-style pipelines, training loops, and evaluation that fed my later work in multimodal and spatial ML.</p>
               <div class="tags">
-                <span>PyTorch</span><span>CV</span><span>Thesis</span>
+                <span>PyTorch</span><span>CV</span><span>Autonomous driving</span><span>Thesis</span>
               </div>
               <div class="card-links"><a href="https://github.com/ReyhanehAhani/Bachelor-Thesis" target="_blank" rel="noopener noreferrer">GitHub →</a></div>
             </article>
