@@ -558,19 +558,9 @@ main {
 }
 
 .pub-venue {
-  margin: 0 0 10px;
-  font-size: 14px;
-  color: var(--muted);
-}
-
-.pub-links {
   margin: 0;
   font-size: 14px;
-  font-weight: 600;
-}
-
-.pub-links a {
-  font-weight: 600;
+  color: var(--muted);
 }
 
 /* Lab notes */
