@@ -534,16 +534,7 @@ main {
   font-weight: 600;
   line-height: 1.35;
   letter-spacing: -0.02em;
-}
-
-.pub-title a {
   color: var(--text);
-  text-decoration: none;
-}
-
-.pub-title a:hover {
-  color: var(--accent);
-  text-decoration: underline;
 }
 
 .pub-meta {
