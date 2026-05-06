@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Interactive data labs — SQL, KPI, quality, modeling, reports" />
+  <title>Data labs — Reyhaneh Ahani</title>
+  <link rel="stylesheet" href="css/style.css?v=20260507" />
+</head>
+<body>
+  <div class="shell">
+    <header class="site-header">
+      <a class="brand" href="index.html">Reyhaneh Ahani</a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html#projects">← Main site</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="panel">
+        <p class="eyebrow">Portfolio</p>
+        <h1>Data analyst &amp; data science labs</h1>
+        <p class="lede">
+          Each repository ships <strong>SQL (DuckDB)</strong>, <strong>data-quality checks</strong>, <strong>KPI reports</strong>,
+          <strong>model baselines + evaluation + error slices</strong>, and <strong>GitHub Actions</strong>.
+          Open the interactive hubs below (GitHub Pages or live HTML preview).
+        </p>
+
+        <div class="edu-grid" style="margin-top: 1rem">
+          <div class="edu-card">
+            <strong>Toy Sales Analytics</strong>
+            <span>Retail KPIs · DuckDB · HTML dashboard · CI</span>
+            <p style="margin: 10px 0 0; font-size: 15px">
+              <a href="https://htmlpreview.github.io/?url=https://raw.githubusercontent.com/ReyhanehAhani/Toy-Sales-Analytics/main/docs/index.html">Preview docs hub</a><br />
+              <a href="https://github.com/ReyhanehAhani/Toy-Sales-Analytics">Repository</a>
+            </p>
+          </div>
+          <div class="edu-card">
+            <strong>Highway–rail crossings</strong>
+            <span>SQL · multiclass model · confusion matrix · permutation importance · errors CSV</span>
+            <p style="margin: 10px 0 0; font-size: 15px">
+              <a href="https://htmlpreview.github.io/?url=https://raw.githubusercontent.com/ReyhanehAhani/Highway_Rail_Grade_Crossing_Accident/main/docs/index.html">Preview docs hub</a><br />
+              <a href="https://github.com/ReyhanehAhani/Highway_Rail_Grade_Crossing_Accident">Repository</a>
+            </p>
+          </div>
+          <div class="edu-card">
+            <strong>Diabetes XAI</strong>
+            <span>Regression baselines · residuals · permutation importance · Papermill SHAP</span>
+            <p style="margin: 10px 0 0; font-size: 15px">
+              <a href="https://htmlpreview.github.io/?url=https://raw.githubusercontent.com/ReyhanehAhani/Diabet-LIME-SHAP/main/docs/index.html">Preview docs hub</a><br />
+              <a href="https://github.com/ReyhanehAhani/Diabet-LIME-SHAP">Repository</a>
+            </p>
+          </div>
+          <div class="edu-card">
+            <strong>Multilingual fact-checking</strong>
+            <span>TF–IDF baseline · confusion · errors-by-language · Label Studio export</span>
+            <p style="margin: 10px 0 0; font-size: 15px">
+              <a href="https://htmlpreview.github.io/?url=https://raw.githubusercontent.com/ReyhanehAhani/Robust-Cross-Lingual-Fact-Checking/main/docs/index.html">Preview docs hub</a><br />
+              <a href="https://github.com/ReyhanehAhani/Robust-Cross-Lingual-Fact-Checking">Repository</a>
+            </p>
+          </div>
+        </div>
+
+        <p class="lede" style="margin-top: 1.5rem">
+          Enable <strong>GitHub Pages → /docs</strong> on each repo for first-party hosting at
+          <code>https://&lt;user&gt;.github.io/&lt;repo&gt;/</code>. Until then, the <strong>htmlpreview</strong> links above work without any setup.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      © <span id="y"></span> Reyhaneh Ahani
+    </footer>
+  </div>
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
